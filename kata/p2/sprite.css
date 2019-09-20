@@ -1,0 +1,31 @@
+ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+
+/* 先将ul的样式去掉，然后对li的每一项display设为inline-block，
+    就把列表横过来了 */
+.share-item {
+    background: url(http://coding.imweb.io/img/p2/share-bg.png);
+    display: inline-block;
+    vertical-align: middle;
+    height: 30px;
+    width: 30px;
+}
+
+.item-qq {
+    background-position: 0 0;
+}
+
+.item-zone {
+    background-position: -30px 0;
+}
+
+.item-wx {
+    background-position: -60px 0;
+}
+
+.item-wb {
+    background-position: -90px 0;
+}
