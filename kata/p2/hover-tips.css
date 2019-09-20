@@ -1,0 +1,30 @@
+.hover-tips {
+    display: inline-block;
+}
+
+/* 按钮 */
+.hover-tips .tips-tt {
+    width: 170px;
+    background-color: #ccc;
+    /* 行高 */
+    line-height: 36px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* 显示的图片 */
+
+.hover-tips .tips-bd {
+    width: 170px;
+    height: 170px;
+    background: url(http://coding.imweb.io/img/p2/qr-bg.png);
+    /* 这个阴影似乎没有意义 */
+    box-shadow: rgba(0, 0, 0, .3);
+    display: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.hover-tips:hover .tips-bd{
+    display: block;
+}
