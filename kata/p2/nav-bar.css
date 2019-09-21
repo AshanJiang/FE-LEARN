@@ -1,0 +1,21 @@
+.link-list {
+    padding-left: 10px;
+    border-radius: 10px;
+    background-color: #333;
+}
+
+.link-list .link-item {
+    display: inline-block;
+    color: white;
+    /* 去掉超链接自带的下划线 */
+    text-decoration: none;
+    /* 使用行高撑起div，这样才能文字居中，用width
+    会让文字上对齐 */
+    line-height: 40px;
+    padding: 0 20px;
+    vertical-align: middle;
+}
+
+.link-list .link-item:hover {
+    background-color: #188eee;
+}
