@@ -1,0 +1,49 @@
+.tour-item {
+    display: block;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    /* 去掉a标签文字效果 */
+    text-decoration: none;
+    color: #333;
+    width: 240px;
+}
+
+.tour-item:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+}
+
+.tour-item .tour-img-wrap {
+    /* 放大效果不出框 */
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 5px;
+}
+
+.tour-item .tour-img {
+    width: 240px;
+    vertical-align: middle;
+    /* 让缩放有平滑的过渡效果 */
+    transition: all .3s;
+}
+
+.tour-item .tour-img-wrap:hover .tour-img {
+    /* 图片缩放 */
+    transform: scale(1.1);
+}
+
+.tour-item .item-tt {
+    margin: 0;
+    /* 去掉h3的加粗效果 */
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    /* 以下三个组合起来，才能让溢出的文字显示... */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.tour-item .item-tt:hover {
+    color: #188eee;
+}
