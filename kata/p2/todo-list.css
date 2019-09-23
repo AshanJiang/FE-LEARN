@@ -1,0 +1,39 @@
+ ul {
+     /* 重置ul */
+     margin: 0;
+     padding: 0;
+     list-style: none outside none;
+ }
+
+ .todo-list .todo-item {
+     /* 用padding撑起高度 */
+     padding: 5px 0;
+ }
+
+ .todo-list .todo-item .icon-todo,
+ .todo-list .todo-item .item-tt {
+     /* 将一行内的所有元素display都变为inline-block */
+     display: inline-block;
+     vertical-align: middle;
+ }
+
+ .todo-list .todo-item .icon-todo {
+     background: url('http://coding.imweb.io/img/p2/icon-todo.png') no-repeat;
+     width: 18px;
+     height: 18px;
+     margin-right: 10px;
+ }
+
+ .todo-list .item--done .icon-todo {
+     /* 已完成的背景 */
+     background-position: 0 -40px;
+ }
+
+ .todo-list .item--done .item-tt {
+     text-decoration: line-through;
+ }
+
+ .todo-list .todo-item:not(.item--done):hover .icon-todo {
+     /* 鼠标滑过未完成 */
+     background-position: 0 -20px;
+ }
