@@ -1,0 +1,131 @@
+/* reset */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333;
+}
+
+ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+
+/* 使用字体图标 */
+@font-face {
+    font-family: 'webfont';
+    src: url('//7.url.cn/edu/classroom/assets/lib/fonts/webfont.eot?ljbe2w');
+    src: url('//7.url.cn/edu/classroom/assets/lib/fonts/webfont.eot?ljbe2w#iefix') format('embedded-opentype'), url('//7.url.cn/edu/classroom/assets/lib/fonts/webfont.ttf?ljbe2w') format('truetype'), url('//7.url.cn/edu/classroom/assets/lib/fonts/webfont.woff?ljbe2w') format('woff'), url('//7.url.cn/edu/classroom/assets/lib/fonts/webfont.svg?ljbe2w#webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.iconfont {
+    font-family: 'webfont' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-search:before {
+    content: "\f002";
+}
+
+.icon-email:before {
+    content: "\f003";
+}
+
+.icon-user:before {
+    content: "\f007";
+}
+
+.icon-map:before {
+    content: "\f041";
+}
+
+.icon-phone:before {
+    content: "\f095";
+}
+
+.icon-link:before {
+    content: "\f0c1";
+}
+
+.business-card {
+    width: 405px;
+    height: 250px;
+    background: #fff;
+    padding-top: 43px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    font-size: 14px;
+    color: #333;
+    /* 限制绝对定位 */
+    position: relative;
+}
+
+/* 伪元素生成橙条 */
+.business-card::before,
+.business-card::after {
+    content: "";
+    height: 33.3%;
+    width: 5px;
+    background-color: #fc6b3f;
+    position: absolute;
+    left: 0;
+    top: 33.3%;
+}
+
+.business-card::after {
+    left: auto;
+    right: 0;
+}
+
+.business-card .card-logo {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    margin: 0 50px;
+    background: url("http://coding.imweb.io/img/imweb-logo.png") no-repeat;
+    background-size: cover;
+}
+
+.business-card .card-bd {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.info-list .info-item:not(:first-child) {
+    margin-top: 10px;
+}
+
+.info-list .item-link {
+    color: #333;
+    text-decoration: none;
+}
+
+/* 设置图标属性 */
+.info-list .iconfont {
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    /* 图标位于中心 */
+    text-align: center;
+    border-radius: 50%;
+}
+
+.info-list .iconfont:before {
+    /* 调整行高 */
+    line-height: 22px;
+}
